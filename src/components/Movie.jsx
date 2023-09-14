@@ -4,6 +4,9 @@ import { UserAuth } from '../context/AuthContext';
 import { db } from '../firebase';
 import { arrayUnion, doc, updateDoc } from 'firebase/firestore';
 
+//  this component is used to display movie items in a visually appealing way, allowing users to like and save movies if they are authenticated. 
+//It integrates with Firestore to store user preferences, such as liked and saved movies.
+
 const Movie = ({ item }) => {
   const [like, setLike] = useState(false);
   const [saved, setSaved] = useState(false);
