@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
-
+// provides a user-friendly interface for logging into the application. 
+// It handles user input, authentication, and error display,
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
