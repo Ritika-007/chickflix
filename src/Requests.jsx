@@ -1,3 +1,7 @@
+// organizes API request URLs for fetching movie-related data from TMDb and centralizes the API key handling. 
+//It makes it easier to manage and update the URLs in one place while keeping the sensitive API key in an environment variable for security.
+//Other parts of the application can import and use these URLs to make API requests for movie information.
+
 const key = process.env.REACT_APP_IMDB_API_KEY
 
 const requests = {
