@@ -5,6 +5,10 @@ import { db } from '../firebase';
 import { updateDoc, doc, onSnapshot } from 'firebase/firestore';
 import { AiOutlineClose } from 'react-icons/ai';
 
+//  provides a user interface for viewing and managing a list of saved shows or movies for an authenticated user. 
+// It integrates with Firestore to store and update the user's saved shows. 
+// Users can scroll through the list horizontally and delete shows as needed.
+
 const SavedShows = () => {
   const [movies, setMovies] = useState([]);
   const { user } = UserAuth();
