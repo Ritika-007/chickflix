@@ -1,6 +1,8 @@
 import React from 'react';
 import SavedShows from '../components/SavedShows';
-
+// Account component provides a visually appealing layout for the user account page. 
+// It integrates the SavedShows component to display the user's saved content. 
+// The specific functionality related to saved shows and user interaction
 const Account = () => {
   return (
     <>
