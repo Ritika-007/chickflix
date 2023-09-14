@@ -1,7 +1,12 @@
+//imported as a means of making HTTP requests to an API.
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+// imported containing API request URLs.
 import requests from '../Requests';
-
+// represents a React component (Main) responsible for fetching and displaying information about a random popular movie. 
+//It makes an API request when the component mounts to fetch movie data and then displays this data in a styled UI, 
+// including the movie's title, release date, and a truncated overview. 
+//The component also selects a random movie to display from the fetched data.
 const Main = () => {
   const [movies, setMovies] = useState([]);
 
