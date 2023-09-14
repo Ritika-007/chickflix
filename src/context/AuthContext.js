@@ -7,7 +7,9 @@ import {
   onAuthStateChanged,
 } from 'firebase/auth';
 import {setDoc,doc} from 'firebase/firestore'
-
+// authentication context and associated functions for user sign-up, log-in, log-out, and user state management. 
+// It integrates Firebase Authentication and Firestore to provide a complete authentication system in the application. 
+// Components can use the UserAuth hook to access these authentication-related functions and user state.
 const AuthContext = createContext();
 
 export function AuthContextProvider({ children }) {
