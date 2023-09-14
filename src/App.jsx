@@ -6,7 +6,10 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Account from './pages/Account';
 import ProtectedRoute from './components/ProtectedRoute';
-
+ // sets up a basic React application with routing using React Router. 
+//It includes authentication-related context and protection for certain routes. 
+//The application has pages for home, login, signup, and account management, with authentication checks in place for the account page. 
+//The navigation bar is also included to navigate between these pages
 function App() {
   return (
     <>
