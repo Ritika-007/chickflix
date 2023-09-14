@@ -2,7 +2,9 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Movie from './Movie';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
-
+//  designed to display a horizontal row of movies fetched from API endpoint. 
+// Users can scroll through the movies using left and right arrows. 
+// It also supports having multiple rows with their unique scroll positions on the page
 const Row = ({ title, fetchURL, rowID }) => {
   const [movies, setMovies] = useState([]);
 
