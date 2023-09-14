@@ -2,6 +2,9 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
 
+//  provides a user-friendly navigation bar with options for logging in, signing up, accessing the account page, and logging out. 
+// The appearance and behavior of the navigation elements depend on the user's authentication status.
+
 const Navbar = () => {
   const { user, logOut } = UserAuth();
   const navigate = useNavigate();
